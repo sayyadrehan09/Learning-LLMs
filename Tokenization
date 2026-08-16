@@ -1,0 +1,44 @@
+Tokenization
+What is Tokenization?
+
+Tokenization is the process of breaking text into smaller units called tokens so that a language model can process text as numbers.
+
+For example:
+
+"I love LLMs"
+
+can be split into tokens such as:
+
+["I", "love", "LLMs"]
+
+The exact tokens depend on the tokenizer being used.
+
+Why do LLMs need Tokenization?
+
+Neural networks cannot directly understand raw text.
+
+The text is converted into tokens, and each token is mapped to a numerical token ID.
+
+
+
+These token IDs are then used to obtain embeddings that the model can process.
+
+Important Point
+
+A token is not necessarily a whole word.
+
+Depending on the tokenizer, a word can be:
+
+one token
+multiple tokens
+part of a larger token
+
+For example:
+
+"unhappiness"
+
+might be split into smaller pieces such as:
+
+["un", "happiness"]
+
+This allows LLMs to handle words they may not have seen before.
